@@ -27,7 +27,7 @@ export default function InfiniteProduct() {
 
     const handleViewCart = () => {
         setIsModalOpen(false);
-        router.push('https://square.link/u/dw205QDo'); // ✅ Redirect to cart
+        router.push('https://square.link/u/dw205QDo'); // ✅ Redirect to payment page
     };
 
     return (
@@ -105,7 +105,7 @@ export default function InfiniteProduct() {
                             {/* Right: Text Info */}
                             <div className="w-full lg:w-1/2 pl-10">
                                 <h3 className="text-black text-3xl font-semibold">Basic</h3>
-                                <p className="text-xl text-red-600 mt-2">8.99$</p>
+                                <p className="text-xl text-red-600 mt-2">39.99$</p>
 
                                 <form className="mt-4 flex space-x-4" onSubmit={handleAddToCart}>
                                     <input

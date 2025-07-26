@@ -225,8 +225,7 @@ export default function BikeHistoryPage() {
               <h3 className="text-xl font-semibold mb-4 text-black">PREMIUM </h3>
               <ul className="text-left space-y-3 text-black">
                 {[
-                  "Buy one get one free Report",
-                  "High Quality Car Images",
+                  
                   "Vehicle Specifications",
                   "Market Value",
                   "Accident Record",
@@ -255,7 +254,7 @@ export default function BikeHistoryPage() {
                 <small className="block text-gray-500">Starting at:</small>
                 <h2 className="text-3xl font-bold text-black">
                   $59.<span className="text-xl font-normal">99</span>{" "}
-                  <small className="text-sm font-normal text-gray-500">/mo</small>
+                  <small className="text-sm font-normal text-gray-500"></small>
                 </h2>
                 <a
                   href="/product/premium"

@@ -16,7 +16,7 @@ export default function InfiniteProduct() {
         const cart = JSON.parse(localStorage.getItem('cart')) || [];
         cart.push({
             title: 'Platinmum',
-            price: 24.99,
+            price: 59.99,
             qty: 1,
         });
         localStorage.setItem('cart', JSON.stringify(cart));
@@ -26,7 +26,7 @@ export default function InfiniteProduct() {
 
     const handleViewCart = () => {
         setIsModalOpen(false);
-        router.push('/cart'); // ✅ Redirect to cart
+        router.push('https://square.link/u/xALBdG6p'); // ✅ Redirect to payment page
     };
 
     return (
@@ -104,7 +104,7 @@ export default function InfiniteProduct() {
                             {/* Right: Text Info */}
                             <div className="w-full lg:w-1/2 pl-10">
                                 <h3 className="text-black text-3xl font-semibold">Platinmum</h3>
-                                <p className="text-xl text-red-600 mt-2">19.99$</p>
+                                <p className="text-xl text-red-600 mt-2">59.99$</p>
 
                                 <form className="mt-4 flex space-x-4" onSubmit={handleAddToCart}>
                                     <input
