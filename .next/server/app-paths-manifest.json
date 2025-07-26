@@ -1,9 +1,7 @@
 {
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/_not-found/page": "app/_not-found/page.js",
   "/truck-history/page": "app/truck-history/page.js",
-  "/rv-history/page": "app/rv-history/page.js",
   "/page": "app/page.js",
+  "/rv-history/page": "app/rv-history/page.js",
   "/boat-history/page": "app/boat-history/page.js",
   "/bike-history/page": "app/bike-history/page.js"
 }

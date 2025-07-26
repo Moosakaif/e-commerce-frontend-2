@@ -34,6 +34,12 @@ export default function Footer() {
         >
           Bike History Report
         </a>
+         {/* <a
+          href="/jet-ski-history"
+          className="text-black font-semibold hover:text-red-950 shake-hover transition duration-200 ease-in-out"
+        >
+          Jet Ski History Report
+        </a> */}
       </div>
     </div>
   )
