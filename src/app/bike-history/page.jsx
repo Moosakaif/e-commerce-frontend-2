@@ -207,7 +207,7 @@ export default function BikeHistoryPage() {
                 <h2 className="text-2xl font-bold">$39.<span className="text-lg">99</span></h2>
               </div>
               <a
-                href="/product/basic"
+                href="images/Group 44.png"
                 className="inline-block mt-4 px-6 py-2 bg-red-400 text-white font-semibold rounded-full shake-hover transition"
               >
                 Order Now
