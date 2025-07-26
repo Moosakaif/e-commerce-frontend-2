@@ -1,9 +1,7 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/product/basic/page": "app/product/basic/page.js",
+  "/jet-ski-history/page": "app/jet-ski-history/page.js",
   "/product/premium/page": "app/product/premium/page.js",
   "/bike-history/page": "app/bike-history/page.js",
   "/car-history/page": "app/car-history/page.js",
-  "/truck-history/page": "app/truck-history/page.js",
-  "/jet-ski-history/page": "app/jet-ski-history/page.js"
+  "/truck-history/page": "app/truck-history/page.js"
 }
