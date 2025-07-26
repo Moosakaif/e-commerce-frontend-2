@@ -14,7 +14,7 @@ export default function TruckHistoryPage() {
         <div className="container mx-auto">
           <div className="text-left">
             <h3 className="text-4xl font-bold mb-2">Van History Report</h3>
-            <p>Enter Banner Content Here</p>
+            
             <ul className="flex space-x-2 text-sm text-white/80">
               <li>
                 <a href="/" className="hover:underline">
@@ -107,7 +107,7 @@ export default function TruckHistoryPage() {
             <div className="bg-white shadow-xl rounded-xl p-6 md:p-8 text-center transition-all hover:scale-105 duration-300">
               <div className="text-sm font-semibold text-gray-500 mb-2">TAT: 12 To 24 Hours</div>
               <img
-                src="https://autoshistoryrecord.com/wp-content/uploads/2023/02/hosting-img-1.svg"
+                src="images/Group 44.png"
                 alt="starter"
                 className="w-16 h-16 mx-auto mb-4"
               />
@@ -127,17 +127,17 @@ export default function TruckHistoryPage() {
                   "Installed Options and Packages"
                 ].map((item, i) => (
                   <li key={i} className="flex items-start space-x-3">
-                    {/* <img
-                        src="https://autoshistoryrecord.com/wp-content/plugins/natix-toolkit/assets/images/plan-box-default-img.svg"
+                    <img
+                        src="images/tick1.png"
                         alt="check"
                         className="w-5 h-5 mt-1"
-                      /> */}
+                      />
                     <span>{item}</span>
                   </li>
                 ))}
               </ul>
               <div className="mt-6">
-                <small className="text-gray-500">Starting at:</small>
+                <small className="text-gray-500">Only For:</small>
                 <h2 className="text-2xl font-bold">$39.<span className="text-lg">99</span></h2>
               </div>
               <a
@@ -150,17 +150,16 @@ export default function TruckHistoryPage() {
 
             {/* PREMIUM Plan */}
             <div className="bg-white shadow-xl rounded-xl p-6 md:p-8 text-center transition-all hover:scale-105 duration-300">
-              <div className="text-sm text-gray-600 mb-2">TAT: 30 Minutes</div>
+              <div className="text-sm text-gray-600 mb-2">TAT: 2 To 3 Hours</div>
               <img
-                src="https://autoshistoryrecord.com/wp-content/uploads/2023/02/hosting-img-3.svg"
+                src="images/prime.png"
                 alt="Prime Plan Icon"
                 className="mx-auto mb-4 w-14 h-14"
               />
               <h3 className="text-xl font-semibold mb-4 text-black">PREMIUM </h3>
               <ul className="text-left space-y-3 text-black">
                 {[
-                  "Buy one get one free Report",
-                  "High Quality Car Images",
+                  
                   "Vehicle Specifications",
                   "Market Value",
                   "Accident Record",
@@ -177,19 +176,19 @@ export default function TruckHistoryPage() {
                   "Title Brand"
                 ].map((item, index) => (
                   <li key={index} className="flex items-start">
-                    {/* <img
-                        src="https://autoshistoryrecord.com/wp-content/uploads/2023/02/dedicated-img-9.svg"
+                    <img
+                        src="images/tick1.png"
                         alt=""
-                        className="w-5 h-5 mt-1 mr-3" /> */}
+                        className="w-5 h-5 mt-1 mr-3" />
                     <span className="text-sm">{item}</span>
                   </li>
                 ))}
               </ul>
               <div className="mt-6">
-                <small className="block text-gray-500">Starting at:</small>
+                <small className="block text-gray-500">Only For:</small>
                 <h2 className="text-3xl font-bold text-black">
                   $59.<span className="text-xl font-normal">99</span>{" "}
-                  <small className="text-sm font-normal text-gray-500">/mo</small>
+                  <small className="text-sm font-normal text-gray-500"></small>
                 </h2>
                 <a
                   href="/product/premium"
