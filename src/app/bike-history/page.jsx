@@ -173,7 +173,7 @@ export default function BikeHistoryPage() {
             <div className="bg-white shadow-xl rounded-xl p-6 md:p-8 text-center transition-all hover:scale-105 duration-300">
               <div className="text-sm font-semibold text-gray-500 mb-2">TAT: 12 To 24 Hours</div>
               <img
-                src="https://autoshistoryrecord.com/wp-content/uploads/2023/02/hosting-img-1.svg"
+                src="images/Group 44.png"
                 alt="starter"
                 className="w-16 h-16 mx-auto mb-4"
               />
@@ -193,11 +193,11 @@ export default function BikeHistoryPage() {
                   "Installed Options and Packages"
                 ].map((item, i) => (
                   <li key={i} className="flex items-start space-x-3">
-                    {/* <img
-                        src="https://autoshistoryrecord.com/wp-content/plugins/natix-toolkit/assets/images/plan-box-default-img.svg"
+                    <img
+                        src="images/tick1.png"
                         alt="check"
                         className="w-5 h-5 mt-1"
-                      /> */}
+                      />
                     <span>{item}</span>
                   </li>
                 ))}
@@ -207,7 +207,7 @@ export default function BikeHistoryPage() {
                 <h2 className="text-2xl font-bold">$39.<span className="text-lg">99</span></h2>
               </div>
               <a
-                href="images/Group 44.png"
+                href="/product/basic"
                 className="inline-block mt-4 px-6 py-2 bg-red-400 text-white font-semibold rounded-full shake-hover transition"
               >
                 Order Now
@@ -216,9 +216,9 @@ export default function BikeHistoryPage() {
 
             {/* PREMIUM Plan */}
             <div className="bg-white shadow-xl rounded-xl p-6 md:p-8 text-center transition-all hover:scale-105 duration-300">
-              <div className="text-sm text-gray-600 mb-2">TAT: 30 Minutes</div>
+              <div className="text-sm text-gray-600 mb-2">TAT: 2 To 3 Hours</div>
               <img
-                src="prime.png"
+                src="images/prime.png"
                 alt="Prime Plan Icon"
                 className="mx-auto mb-4 w-14 h-14"
               />
@@ -242,12 +242,12 @@ export default function BikeHistoryPage() {
                   "Title Brand"
                 ].map((item, index) => (
                   <li key={index} className="flex items-start">
-                    {/* <img
-                        src="https://autoshistoryrecord.com/wp-content/uploads/2023/02/dedicated-img-9.svg"
+                    <img
+                        src="images/tick1.png"
                         alt=""
-                        className="w-5 h-5 mt-1 mr-3" /> */}
+                        className="w-5 h-5 mt-1 mr-3" />
                     <span className="text-sm">{item}</span>
-                  </li>
+                  </li> 
                 ))}
               </ul>
               <div className="mt-6">
