@@ -36,7 +36,7 @@ export default function BikeHistoryPage() {
                 >
                     <div className="container mx-auto px-4">
                         <h3 className="text-3xl font-bold">Boat History Report</h3>
-                        <p className="mt-2">Enter Banner Content Here</p>
+                        
                         <ul className="flex gap-2 text-sm mt-4">
                             <li><a href="/" className="hover:underline">Home</a></li>
                             <li>/</li>
@@ -141,7 +141,7 @@ export default function BikeHistoryPage() {
                         <div className="bg-white shadow-xl rounded-xl p-6 md:p-8 text-center transition-all hover:scale-105 duration-300">
                             <div className="text-sm font-semibold text-gray-500 mb-2">TAT: 12 To 24 Hours</div>
                             <img
-                                src="https://autoshistoryrecord.com/wp-content/uploads/2023/02/hosting-img-1.svg"
+                                src="images/Group 44.png"
                                 alt="starter"
                                 className="w-16 h-16 mx-auto mb-4"
                             />
@@ -161,11 +161,11 @@ export default function BikeHistoryPage() {
                                     "Installed Options and Packages"
                                 ].map((item, i) => (
                                     <li key={i} className="flex items-start space-x-3">
-                                        {/* <img
-                        src="https://autoshistoryrecord.com/wp-content/plugins/natix-toolkit/assets/images/plan-box-default-img.svg"
+                                        <img
+                        src="images/tick1.png"
                         alt="check"
                         className="w-5 h-5 mt-1"
-                      /> */}
+                      />
                                         <span>{item}</span>
                                     </li>
                                 ))}
