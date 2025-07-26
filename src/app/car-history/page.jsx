@@ -79,7 +79,7 @@ const CarHistoryReport = () => {
               <div className="bg-white shadow-xl rounded-xl p-6 md:p-8 text-center transition-all hover:scale-105 duration-300">
                 <div className="text-sm font-semibold text-gray-500 mb-2">TAT: 12 To 24 Hours</div>
                 <img
-                  src="basic.png"
+                  src="images/Group 44.png"
                   alt="starter"
                   className="w-16 h-16 mx-auto mb-4"
                 />
@@ -122,9 +122,9 @@ const CarHistoryReport = () => {
 
               {/* PREMIUM Plan */}
               <div className="bg-white shadow-xl rounded-xl p-6 md:p-8 text-center transition-all hover:scale-105 duration-300">
-                <div className="text-sm text-gray-600 mb-2">TAT: 30 Minutes</div>
+                <div className="text-sm text-gray-600 mb-2">TAT: 2 to 3 Hours</div>
                 <img
-                  src="https://autoshistoryrecord.com/wp-content/uploads/2023/02/hosting-img-3.svg"
+                  src="images/prime.png"
                   alt="Prime Plan Icon"
                   className="mx-auto mb-4 w-14 h-14"
                 />

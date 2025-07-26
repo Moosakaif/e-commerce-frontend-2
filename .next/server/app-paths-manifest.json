@@ -1,9 +1,9 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/product/basic/page": "app/product/basic/page.js",
   "/product/premium/page": "app/product/premium/page.js",
-  "/bike-history/page": "app/bike-history/page.js",
   "/jet-ski-history/page": "app/jet-ski-history/page.js",
-  "/car-history/page": "app/car-history/page.js"
+  "/bike-history/page": "app/bike-history/page.js",
+  "/car-history/page": "app/car-history/page.js",
+  "/product/basic/page": "app/product/basic/page.js"
 }
