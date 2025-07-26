@@ -1,10 +1,9 @@
 {
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/page": "app/page.js",
   "/product/basic/page": "app/product/basic/page.js",
+  "/jet-ski-history/page": "app/jet-ski-history/page.js",
   "/product/premium/page": "app/product/premium/page.js",
   "/truck-history/page": "app/truck-history/page.js",
+  "/product/basicjet/page": "app/product/basicjet/page.js",
   "/atv-history/page": "app/atv-history/page.js",
-  "/jet-ski-history/page": "app/jet-ski-history/page.js",
-  "/car-history/page": "app/car-history/page.js"
+  "/product/premiumjet/page": "app/product/premiumjet/page.js"
 }

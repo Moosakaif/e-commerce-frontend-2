@@ -8,14 +8,14 @@ export default function BikeHistoryPage() {
 
   const slides = [
     {
-      title: 'Bike Evaluation',
+      title: 'Jet Ski Evaluation',
       description:
         'Bike history reports are crucial for making informed purchasing decisions when buying a used motorcycle. They provide transparency and help identify potential risks or issues that may not be apparent during a visual inspection...',
       image:
-        '/images/BIKE-INSPECTION.png',
+        '/images/jetskipic-removebg-preview.png',
     },
     {
-      title: 'Bike History Report Includes:',
+      title: 'Jet Ski History Report Includes:',
       features: [
         'Ownership History: Number of previous owners and ownership duration.',
         'Vehicle Inspections: Results showing mechanical or safety issues.',
@@ -47,7 +47,7 @@ export default function BikeHistoryPage() {
           }}
         >
           <div className="container mx-auto px-4">
-            <h3 className="text-3xl font-bold">Bike History Report</h3>
+            <h3 className="text-3xl font-bold">Jet Ski History Report</h3>
             <p className="mt-2">Enter Banner Content Here</p>
             <ul className="flex gap-2 text-sm mt-4">
               <li>
@@ -58,7 +58,7 @@ export default function BikeHistoryPage() {
               <li>/</li>
               <li>
                 <a href="/bike-history" className="hover:underline">
-                  Bike History Report
+                  Jet Ski History Report
                 </a>
               </li>
             </ul>
@@ -157,7 +157,7 @@ export default function BikeHistoryPage() {
       <section className="bg-white py-16">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4 text-black
-          ">Bike History Report Packages</h2>
+          ">Jet Ski History Report Packages</h2>
           <p className="text-gray-600 mb-10">
             <strong>Discover our competitive pricing that fits your budget</strong>
           </p>
@@ -204,10 +204,10 @@ export default function BikeHistoryPage() {
               </ul>
               <div className="mt-6">
                 <small className="text-gray-500">Starting at:</small>
-                <h2 className="text-2xl font-bold">$39.<span className="text-lg">99</span></h2>
+                <h2 className="text-2xl font-bold">$59.<span className="text-lg">99</span></h2>
               </div>
               <a
-                href="/product/basic"
+                href="/product/basicjet"
                 className="inline-block mt-4 px-6 py-2 bg-red-400 text-white font-semibold rounded-full shake-hover transition"
               >
                 Order Now
@@ -253,11 +253,11 @@ export default function BikeHistoryPage() {
               <div className="mt-6">
                 <small className="block text-gray-500">Starting at:</small>
                 <h2 className="text-3xl font-bold text-black">
-                  $59.<span className="text-xl font-normal">99</span>{" "}
+                  $79.<span className="text-xl font-normal">99</span>{" "}
                   <small className="text-sm font-normal text-gray-500"></small>
                 </h2>
                 <a
-                  href="/product/premium"
+                  href="/product/premiumjet"
                   className="inline-block mt-4 bg-indigo-400 text-white px-6 py-2 rounded-full shake-hover transition"
                 >
                   Order Now

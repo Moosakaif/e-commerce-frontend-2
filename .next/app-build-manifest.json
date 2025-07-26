@@ -66,6 +66,16 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/jet-ski-history/page.js"
+    ],
+    "/product/basicjet/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/product/basicjet/page.js"
+    ],
+    "/product/premiumjet/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/product/premiumjet/page.js"
     ]
   }
 }
