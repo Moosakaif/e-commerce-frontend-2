@@ -1,7 +1,9 @@
 {
-  "/bike-history/page": "app/bike-history/page.js",
-  "/car-history/page": "app/car-history/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/_not-found/page": "app/_not-found/page.js",
   "/truck-history/page": "app/truck-history/page.js",
-  "/van-history/page": "app/van-history/page.js",
-  "/rv-history/page": "app/rv-history/page.js"
+  "/rv-history/page": "app/rv-history/page.js",
+  "/page": "app/page.js",
+  "/boat-history/page": "app/boat-history/page.js",
+  "/bike-history/page": "app/bike-history/page.js"
 }

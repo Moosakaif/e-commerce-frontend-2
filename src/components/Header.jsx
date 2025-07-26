@@ -56,7 +56,8 @@ const Navbar = () => {
                 { href: '/van-history', text: 'Van History Report' },
                 { href: '/car-history', text: 'Car History Report' },
                 { href: '/bike-history', text: 'Bike History Report' },
-                { href: '/boat-history', text: 'Boat History Report' }
+                { href: '/boat-history', text: 'Boat History Report' },
+                { href: '/jet-ski-history', text: 'Jet Ski History Report' }
               ].map((item, index) => (
                 <li key={index}>
                   <a href={item.href}>{item.text}</a>
