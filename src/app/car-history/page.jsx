@@ -109,7 +109,7 @@ const CarHistoryReport = () => {
                   ))}
                 </ul>
                 <div className="mt-6">
-                  <small className="text-gray-500">Starting at:</small>
+                  <small className="text-gray-500">Only For:</small>
                   <h2 className="text-2xl font-bold">$39.<span className="text-lg">99</span></h2>
                 </div>
                 <a
@@ -158,7 +158,7 @@ const CarHistoryReport = () => {
                   ))}
                 </ul>
                 <div className="mt-6">
-                  <small className="block text-gray-500">Starting at:</small>
+                  <small className="block text-gray-500">Only For:</small>
                   <h2 className="text-3xl font-bold text-black">
                     $59.<span className="text-xl font-normal">99</span>{" "}
                     <small className="text-sm font-normal text-gray-500">/mo</small>
