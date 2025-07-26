@@ -99,11 +99,11 @@ const CarHistoryReport = () => {
                     "Installed Options and Packages"
                   ].map((item, i) => (
                     <li key={i} className="flex items-start space-x-3">
-                      {/* <img
-                        src="https://autoshistoryrecord.com/wp-content/plugins/natix-toolkit/assets/images/plan-box-default-img.svg"
+                      <img
+                        src="images/tick1.png"
                         alt="check"
                         className="w-5 h-5 mt-1"
-                      /> */}
+                      />
                       <span>{item}</span>
                     </li>
                   ))}
@@ -149,10 +149,10 @@ const CarHistoryReport = () => {
                     "Title Brand"
                   ].map((item, index) => (
                     <li key={index} className="flex items-start">
-                      {/* <img
-                        src="https://autoshistoryrecord.com/wp-content/uploads/2023/02/dedicated-img-9.svg"
+                      <img
+                        src="images/tick1.png"
                         alt=""
-                        className="w-5 h-5 mt-1 mr-3" /> */}
+                        className="w-5 h-5 mt-1 mr-3" />
                       <span className="text-sm">{item}</span>
                     </li>
                   ))}
