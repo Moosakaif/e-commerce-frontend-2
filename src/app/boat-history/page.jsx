@@ -137,7 +137,7 @@ export default function BikeHistoryPage() {
 
                     {/* Plan Box */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-black">
-                        {/* Basic  Plan */}
+                        {/* Basic  Plan
                         <div className="bg-white shadow-xl rounded-xl p-6 md:p-8 text-center transition-all hover:scale-105 duration-300">
                             <div className="text-sm font-semibold text-gray-500 mb-2">TAT: 12 To 24 Hours</div>
                             <img
@@ -180,21 +180,21 @@ export default function BikeHistoryPage() {
                             >
                                 Order Now
                             </a>
-                        </div>
+                        </div> */}
 
                         {/* PREMIUM Plan */}
                         <div className="bg-white shadow-xl rounded-xl p-6 md:p-8 text-center transition-all hover:scale-105 duration-300">
-                            <div className="text-sm text-gray-600 mb-2">TAT: 30 Minutes</div>
+                            <div className="text-sm text-gray-600 mb-2">TAT: 5 TO 6 Hours</div>
                             <img
-                                src="https://autoshistoryrecord.com/wp-content/uploads/2023/02/hosting-img-3.svg"
+                                src="images/prime.png"
                                 alt="Prime Plan Icon"
                                 className="mx-auto mb-4 w-14 h-14"
                             />
-                            <h3 className="text-xl font-semibold mb-4 text-black">PREMIUM </h3>
+                            <h3 className="text-xl font-semibold mb-4 text-black">Boat Package </h3>
                             <ul className="text-left space-y-3 text-black">
                                 {[
-                                    "Buy one get one free Report",
-                                    "High Quality Car Images",
+                                    // "Buy one get one free Report",
+                                    // "High Quality Car Images",
                                     "Vehicle Specifications",
                                     "Market Value",
                                     "Accident Record",
@@ -211,25 +211,25 @@ export default function BikeHistoryPage() {
                                     "Title Brand"
                                 ].map((item, index) => (
                                     <li key={index} className="flex items-start">
-                                        {/* <img
-                        src="https://autoshistoryrecord.com/wp-content/uploads/2023/02/dedicated-img-9.svg"
-                        alt=""
-                        className="w-5 h-5 mt-1 mr-3" /> */}
+                                        <img
+                        src="images/tick1.png"
+                        alt="tick"
+                        className="w-5 h-5 mt-1 mr-3" />
                                         <span className="text-sm">{item}</span>
                                     </li>
                                 ))}
                             </ul>
                             <div className="mt-6">
-                                <small className="block text-gray-500">Starting at:</small>
+                                <small className="block text-gray-500">Only For:</small>
                                 <h2 className="text-3xl font-bold text-black">
-                                    $59.<span className="text-xl font-normal">99</span>{" "}
-                                    <small className="text-sm font-normal text-gray-500">/mo</small>
+                                    $139.<span className="text-xl font-normal">99</span>{" "}
+                                    <small className="text-sm font-normal text-gray-500"></small>
                                 </h2>
                                 <a
-                                    href="https://square.link/u/ViYVaqL3"
+                                    href="/product/boatpay"
                                     className="inline-block mt-4 bg-indigo-400 text-white px-6 py-2 rounded-full shake-hover transition"
                                 >
-                                    Order Now
+                                Order Now
                                 </a>
                             </div>
                         </div>

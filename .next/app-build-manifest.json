@@ -81,6 +81,11 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/products/page.js"
+    ],
+    "/product/boatpay/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/product/boatpay/page.js"
     ]
   }
 }
