@@ -216,7 +216,7 @@ export default function BikeHistoryPage() {
 
             {/* PREMIUM Plan */}
             <div className="bg-white shadow-xl rounded-xl p-6 md:p-8 text-center transition-all hover:scale-105 duration-300">
-              <div className="text-sm text-gray-600 mb-2">TAT: 30 Minutes</div>
+              <div className="text-sm text-gray-600 mb-2">TAT: 2 TO 3 Hours</div>
               <img
                 src="images/prime.png"
                 alt="Prime Plan Icon"
