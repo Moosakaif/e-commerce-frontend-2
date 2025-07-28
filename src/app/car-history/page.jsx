@@ -161,7 +161,7 @@ const CarHistoryReport = () => {
                   <small className="block text-gray-500">Only For:</small>
                   <h2 className="text-3xl font-bold text-black">
                     $59.<span className="text-xl font-normal">99</span>{" "}
-                    <small className="text-sm font-normal text-gray-500">/mo</small>
+                    
                   </h2>
                   <a
                     href="/product/premium"

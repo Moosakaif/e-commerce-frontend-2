@@ -1,8 +1,7 @@
 {
-  "/product/boatpay/page": "app/product/boatpay/page.js",
   "/car-history/page": "app/car-history/page.js",
   "/contact/page": "app/contact/page.js",
-  "/product/premium/page": "app/product/premium/page.js",
   "/van-history/page": "app/van-history/page.js",
-  "/product/basic/page": "app/product/basic/page.js"
+  "/product/basic/page": "app/product/basic/page.js",
+  "/product/premium/page": "app/product/premium/page.js"
 }
