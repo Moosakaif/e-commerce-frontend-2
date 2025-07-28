@@ -1,7 +1,5 @@
 {
-  "/car-history/page": "app/car-history/page.js",
-  "/contact/page": "app/contact/page.js",
-  "/van-history/page": "app/van-history/page.js",
-  "/product/basic/page": "app/product/basic/page.js",
-  "/product/premium/page": "app/product/premium/page.js"
+  "/page": "app/page.js",
+  "/jet-ski-history/page": "app/jet-ski-history/page.js",
+  "/contact/page": "app/contact/page.js"
 }

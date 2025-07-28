@@ -61,7 +61,7 @@ export default function TestimonialCarousel() {
         ))}
       </Swiper>
       {/* Support Boxes */}
-      <div className="grid sm:grid-cols-3 gap-4 mt-16 max-w-5xl mx-auto px-4">
+      {/* <div className="grid sm:grid-cols-3 gap-4 mt-16 max-w-5xl mx-auto px-4">
         <div className="bg-pink-500 text-white p-6 rounded-lg shadow sha">
           <FiMessageCircle className="text-3xl mb-2" />
           <h3 className="text-lg font-bold">Live Support</h3>
@@ -78,7 +78,7 @@ export default function TestimonialCarousel() {
           <h3 className="text-lg font-bold">Knowledge Base</h3>
           <p className="text-sm">Build Knowledge Base System</p>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }
