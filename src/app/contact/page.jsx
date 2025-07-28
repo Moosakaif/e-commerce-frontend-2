@@ -1,4 +1,5 @@
 'use client';
+import { number } from "framer-motion";
 import React from "react";
 
 const Contact = () => {
@@ -71,7 +72,7 @@ const Contact = () => {
               onSubmit={async (e) => {
                 e.preventDefault();
                 const form = e.target;
-                const res = await fetch('http://localhost:5000/api/contact', {
+                const res = await fetch('http://localhost:5000', {
                   method: 'POST',
                   headers: { 'Content-Type': 'application/json' },
                   body: JSON.stringify({
@@ -79,7 +80,7 @@ const Contact = () => {
                     name: form[1].value,
                     email: form[2].value,
                     phone: form[3].value,
-                    subject: form[4].value,
+                    REG : form[4].value,
                     message: form[5].value,
                   }),
                 });
@@ -94,14 +95,14 @@ const Contact = () => {
               }}
             >
 
-              <select className="col-span-2 p-2 border rounded text-black" required>
+              {/* <select className="col-span-2 p-2 border rounded text-black" required>
                 <option>Choose Department</option>
                 <option>Sales</option>
                 <option>Technical</option>
                 <option>Billing</option>
                 <option>Support</option>
                 <option>Other</option>
-              </select>
+              </select> */}
               <input
                 type="text"
                 placeholder="Full Name..."
@@ -122,16 +123,16 @@ const Contact = () => {
               />
               <input
                 type="text"
-                placeholder="Subject"
+                placeholder="REG Number"
                 className="p-2 border rounded text-gray-500"
                 required
               />
-              <textarea
+              {/* <textarea
                 rows="6"
                 placeholder="Message..."
                 className="col-span-2 p-2 border rounded text-gray-500"
                 required
-              />
+              /> */}
               <button
                 type="submit"
                 className="col-span-2 py-3 bg-red-500 text-white rounded-full hover:bg-red-800 transition"
