@@ -76,12 +76,12 @@ const Contact = () => {
                   method: 'POST',
                   headers: { 'Content-Type': 'application/json' },
                   body: JSON.stringify({
-                    department: form[0].value,
+                    // department: form[0].value,
                     name: form[1].value,
                     email: form[2].value,
                     phone: form[3].value,
                     REG : form[4].value,
-                    message: form[5].value,
+                    // message: form[5].value,
                   }),
                 });
 

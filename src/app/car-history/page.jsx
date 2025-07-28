@@ -131,8 +131,8 @@ const CarHistoryReport = () => {
                 <h3 className="text-xl font-semibold mb-4 text-black">PREMIUM </h3>
                 <ul className="text-left space-y-3 text-black">
                   {[
-                    "Buy one get one free Report",
-                    "High Quality Car Images",
+                    // "Buy one get one free Report",
+                    // "High Quality Car Images",
                     "Vehicle Specifications",
                     "Market Value",
                     "Accident Record",
