@@ -1,5 +1,6 @@
 {
-  "/contact/page": "app/contact/page.js",
   "/page": "app/page.js",
+  "/rv-history/page": "app/rv-history/page.js",
+  "/contact/page": "app/contact/page.js",
   "/jet-ski-history/page": "app/jet-ski-history/page.js"
 }
