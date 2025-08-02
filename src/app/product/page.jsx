@@ -4,18 +4,18 @@ import { useEffect, useState } from 'react';
 export default function ProductPage() {
   const [products, setProducts] = useState([]);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await fetch('http://localhost:5000/api/products');
-        const data = await res.json();
-        setProducts(data);
-      } catch (err) {
-        console.error('Error fetching products:', err);
-      }
-    };
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const res = await fetch('http://localhost:5000/api/products');
+  //       const data = await res.json();
+  //       setProducts(data);
+  //     } catch (err) {
+  //       console.error('Error fetching products:', err);
+  //     }
+  //   };
+  //   fetchData();
+  // }, []);
 
   return (
     <div className="container mx-auto p-4">
