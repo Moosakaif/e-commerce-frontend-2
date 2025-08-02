@@ -57,7 +57,7 @@ export default function BikeHistoryPage() {
               </li>
               <li>/</li>
               <li>
-                <a href="/bike-history" className="hover:underline">
+                <a href="/jet-ski-history" className="hover:underline">
                   Jet Ski History Report
                 </a>
               </li>
