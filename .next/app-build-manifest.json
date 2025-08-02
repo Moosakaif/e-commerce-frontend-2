@@ -47,13 +47,6 @@
       "static/chunks/874-fa27e7a965da6864.js",
       "static/chunks/app/car-history/page-30c81b113925fd74.js"
     ],
-    "/boat-history/page": [
-      "static/chunks/webpack-e2edc9955a6ab270.js",
-      "static/chunks/4bd1b696-ad45a0d75f1c7ab5.js",
-      "static/chunks/684-03ff319ee9c9c36a.js",
-      "static/chunks/main-app-e0cf8243676d12f7.js",
-      "static/chunks/app/boat-history/page-685172bdea45e77f.js"
-    ],
     "/contact/page": [
       "static/chunks/webpack-e2edc9955a6ab270.js",
       "static/chunks/4bd1b696-ad45a0d75f1c7ab5.js",
@@ -61,13 +54,12 @@
       "static/chunks/main-app-e0cf8243676d12f7.js",
       "static/chunks/app/contact/page-f276e164fed275ed.js"
     ],
-    "/cart/page": [
+    "/boat-history/page": [
       "static/chunks/webpack-e2edc9955a6ab270.js",
       "static/chunks/4bd1b696-ad45a0d75f1c7ab5.js",
       "static/chunks/684-03ff319ee9c9c36a.js",
       "static/chunks/main-app-e0cf8243676d12f7.js",
-      "static/chunks/874-fa27e7a965da6864.js",
-      "static/chunks/app/cart/page-d0eeaed764b9c51b.js"
+      "static/chunks/app/boat-history/page-685172bdea45e77f.js"
     ],
     "/jet-ski-history/page": [
       "static/chunks/webpack-e2edc9955a6ab270.js",
@@ -76,6 +68,14 @@
       "static/chunks/main-app-e0cf8243676d12f7.js",
       "static/chunks/766-88cba2556eb967be.js",
       "static/chunks/app/jet-ski-history/page-b11774dc7633a39d.js"
+    ],
+    "/cart/page": [
+      "static/chunks/webpack-e2edc9955a6ab270.js",
+      "static/chunks/4bd1b696-ad45a0d75f1c7ab5.js",
+      "static/chunks/684-03ff319ee9c9c36a.js",
+      "static/chunks/main-app-e0cf8243676d12f7.js",
+      "static/chunks/874-fa27e7a965da6864.js",
+      "static/chunks/app/cart/page-d0eeaed764b9c51b.js"
     ],
     "/page": [
       "static/chunks/webpack-e2edc9955a6ab270.js",
@@ -103,26 +103,12 @@
       "static/chunks/main-app-e0cf8243676d12f7.js",
       "static/chunks/app/product/basicjet/page-c60ade910d08cd46.js"
     ],
-    "/product/boatpay/page": [
-      "static/chunks/webpack-e2edc9955a6ab270.js",
-      "static/chunks/4bd1b696-ad45a0d75f1c7ab5.js",
-      "static/chunks/684-03ff319ee9c9c36a.js",
-      "static/chunks/main-app-e0cf8243676d12f7.js",
-      "static/chunks/app/product/boatpay/page-57e8e8699b5ee3cc.js"
-    ],
     "/product/premium/page": [
       "static/chunks/webpack-e2edc9955a6ab270.js",
       "static/chunks/4bd1b696-ad45a0d75f1c7ab5.js",
       "static/chunks/684-03ff319ee9c9c36a.js",
       "static/chunks/main-app-e0cf8243676d12f7.js",
       "static/chunks/app/product/premium/page-bfa4704737c9975c.js"
-    ],
-    "/product/premiumjet/page": [
-      "static/chunks/webpack-e2edc9955a6ab270.js",
-      "static/chunks/4bd1b696-ad45a0d75f1c7ab5.js",
-      "static/chunks/684-03ff319ee9c9c36a.js",
-      "static/chunks/main-app-e0cf8243676d12f7.js",
-      "static/chunks/app/product/premiumjet/page-0e4a44e44ba2c897.js"
     ],
     "/product/page": [
       "static/chunks/webpack-e2edc9955a6ab270.js",
@@ -131,13 +117,19 @@
       "static/chunks/main-app-e0cf8243676d12f7.js",
       "static/chunks/app/product/page-db05645427d15bb8.js"
     ],
-    "/products/page": [
+    "/product/premiumjet/page": [
       "static/chunks/webpack-e2edc9955a6ab270.js",
       "static/chunks/4bd1b696-ad45a0d75f1c7ab5.js",
       "static/chunks/684-03ff319ee9c9c36a.js",
       "static/chunks/main-app-e0cf8243676d12f7.js",
-      "static/chunks/874-fa27e7a965da6864.js",
-      "static/chunks/app/products/page-825ea9031adb03e6.js"
+      "static/chunks/app/product/premiumjet/page-0e4a44e44ba2c897.js"
+    ],
+    "/product/boatpay/page": [
+      "static/chunks/webpack-e2edc9955a6ab270.js",
+      "static/chunks/4bd1b696-ad45a0d75f1c7ab5.js",
+      "static/chunks/684-03ff319ee9c9c36a.js",
+      "static/chunks/main-app-e0cf8243676d12f7.js",
+      "static/chunks/app/product/boatpay/page-57e8e8699b5ee3cc.js"
     ],
     "/products/pages/page2/page": [
       "static/chunks/webpack-e2edc9955a6ab270.js",
@@ -155,6 +147,13 @@
       "static/chunks/874-fa27e7a965da6864.js",
       "static/chunks/app/products/pages/page4/page-aa47eaef2bec311c.js"
     ],
+    "/truck-history/page": [
+      "static/chunks/webpack-e2edc9955a6ab270.js",
+      "static/chunks/4bd1b696-ad45a0d75f1c7ab5.js",
+      "static/chunks/684-03ff319ee9c9c36a.js",
+      "static/chunks/main-app-e0cf8243676d12f7.js",
+      "static/chunks/app/truck-history/page-f1ad557e8a2edc7c.js"
+    ],
     "/rv-history/page": [
       "static/chunks/webpack-e2edc9955a6ab270.js",
       "static/chunks/4bd1b696-ad45a0d75f1c7ab5.js",
@@ -162,12 +161,13 @@
       "static/chunks/main-app-e0cf8243676d12f7.js",
       "static/chunks/app/rv-history/page-7e238196ec35fd29.js"
     ],
-    "/truck-history/page": [
+    "/products/page": [
       "static/chunks/webpack-e2edc9955a6ab270.js",
       "static/chunks/4bd1b696-ad45a0d75f1c7ab5.js",
       "static/chunks/684-03ff319ee9c9c36a.js",
       "static/chunks/main-app-e0cf8243676d12f7.js",
-      "static/chunks/app/truck-history/page-f1ad557e8a2edc7c.js"
+      "static/chunks/874-fa27e7a965da6864.js",
+      "static/chunks/app/products/page-825ea9031adb03e6.js"
     ],
     "/van-history/page": [
       "static/chunks/webpack-e2edc9955a6ab270.js",
