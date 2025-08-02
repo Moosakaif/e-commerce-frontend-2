@@ -12,20 +12,20 @@
       "static/css/app/page.css",
       "static/chunks/app/page.js"
     ],
-    "/jet-ski-history/page": [
+    "/car-history/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/jet-ski-history/page.js"
+      "static/chunks/app/car-history/page.js"
     ],
-    "/contact/page": [
+    "/product/basic/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/contact/page.js"
+      "static/chunks/app/product/basic/page.js"
     ],
-    "/rv-history/page": [
+    "/product/premium/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/rv-history/page.js"
+      "static/chunks/app/product/premium/page.js"
     ]
   }
 }

@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <div className="bg-gray-100 py-10 px-4">
       <div className="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 text-center">
-        <a
+        {/* <a
           href="/car-history"
           className="text-black font-semibold hover:text-red-950 shake-hover transition duration-200 ease-in-out"
         >
@@ -33,7 +33,7 @@ export default function Footer() {
           className="text-black font-semibold hover:text-red-950 shake-hover transition duration-200 ease-in-out"
         >
           Bike History Report
-        </a>
+        </a> */}
          {/* <a
           href="/jet-ski-history"
           className="text-black font-semibold hover:text-red-950 shake-hover transition duration-200 ease-in-out"

@@ -1,156 +1,183 @@
 'use client';
-import { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
-import Link from 'next/link';
-import Breadcrumb from '@/components/Breadcrumb';
-import ProductSidebar from '@/components/ProductSidebar';
-import CommentsForm from '@/components/CommentsForm';
 
-export default function InfiniteProduct() {
-    const [isModalOpen, setIsModalOpen] = useState(false);
-    const router = useRouter();
+import { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 
-    const handleAddToCart = (e) => {
-        e.preventDefault();
+export default function Home() {
+  const formRef = useRef(null);
+  const [showPayment, setShowPayment] = useState(false);
 
-        const cart = JSON.parse(localStorage.getItem('cart')) || [];
-        cart.push({
-            title: 'Platinmum',
-            price: 59.99,
-            qty: 1,
-        });
-        localStorage.setItem('cart', JSON.stringify(cart));
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-        setIsModalOpen(true); // ✅ Show modal
-    };
+    if (!formRef.current) return;
 
-    const handleViewCart = () => {
-        setIsModalOpen(false);
-        router.push('https://square.link/u/xALBdG6p'); // ✅ Redirect to payment page
-    };
+    emailjs
+      .sendForm(
+        'service_uvlb4sv',
+        'template_j0iwhrm',
+        formRef.current,
+        'vAOFTv3WLNTiP2zZb'
+      )
+      .then(
+        (result) => {
+          alert('Email sent successfully!');
+          console.log('Success:', result.text);
+          e.target.reset();
+          setShowPayment(true); // Show payment button
+        },
+        (error) => {
+          alert('Email sending failed.');
+          console.error('Failed:', error.text);
+        }
+      );
+  };
 
-    return (
-        <div className='items-center'>
-            {/* ✅ Modal */}
-            {isModalOpen && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center  bg-opacity-50">
-                    <div className="bg-white rounded-lg shadow-lg w-full max-w-md p-6">
-                        <div className="flex justify-between items-center border-b pb-2">
-                            <h3 className="text-lg font-semibold text-black">Added to Cart</h3>
-                            <button
-                                onClick={() => setIsModalOpen(false)}
-                                className="text-gray-500 hover:text-gray-800"
-                            >
-                                &times;
-                            </button>
-                        </div>
+  return (
+    <div className="bg-gray-100 min-h-screen">
+      <div className="container mx-auto px-4 py-6 max-w-6xl">
+        <div className="flex flex-col md:flex-row gap-6">
+          {/* Left Section */}
+          <div className="min-h-screen bg-gray-100 p-6">
+            <div className="max-w-xl mx-auto bg-white p-6 rounded shadow">
+              <h2 className="text-xl font-bold mb-4">Fill The Form To Proceed.....</h2>
 
-                        <div className="mt-4 text-black">
-                            ✅ <strong>Core</strong> has been added to your cart.
-                        </div>
+              <form ref={formRef} onSubmit={sendEmail} className="space-y-4">
+                <input
+    name="full_name"
+    type="text"
+    placeholder="Full Name"
+    required
+    className="w-full p-3 border rounded"
+  />
+  <input
+    name="email"
+    type="email"
+    placeholder="Email Address"
+    required
+    className="w-full p-3 border rounded"
+  />
+  <input
+    name="phone"
+    type="tel"
+    placeholder="Phone Number"
+    required
+    className="w-full p-3 border rounded"
+  />
+  <input
+    name="vin"
+    type="text"
+    placeholder="VIN / Registration"
+    required
+    className="w-full p-3 border rounded"
+  />
+  <input
+    name="address"
+    type="text"
+    placeholder="Address"
+    required
+    className="w-full p-3 border rounded"
+  />
+  <input
+    name="zip"
+    type="text"
+    placeholder="Zip Code"
+    required
+    className="w-full p-3 border rounded"
+  />
+  {/* <input
+    name="country"
+    type="text"
+    placeholder="Country"
+    required
+    className="w-full p-3 border rounded"
+  />     */}
+                <button
+                  type="submit"
+                  className="w-full bg-red-600 text-white py-2 rounded hover:bg-red-700"
+                >
+                  Send Report
+                </button>
+              </form>
 
-                        <div className="mt-6 flex justify-end space-x-2">
-                            <button
-                                onClick={() => setIsModalOpen(false)}
-                                className="bg-gray-300 text-gray-800 px-4 py-2 rounded hover:bg-gray-400"
-                            >
-                                Close
-                            </button>
-                            <button
-                                onClick={handleViewCart}
-                                className="bg-red-600 text-white px-4 py-2 rounded hover:bg-blue-900"
-                            >
-                                get Report
-                            </button>
-                        </div>
+              {/* 🎯 Pioneer Payment Button (Shown after email sent) */}
+              {showPayment && (
+                <div className="mt-6 text-center">
+                  <a
+                    href="https://pay.pioneer.app/your-link" // 🔁 Replace with your actual link
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700"
+                  >
+                    Proceed to Payment
+                  </a>
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* Right Section remains unchanged */}
+          <div className="md:w-2/5">
+            <div className="bg-white p-6 border rounded">
+              <h3 className="text-lg mb-4">With Drive Checkr you may get</h3>
+
+              <div className="grid grid-cols-2 gap-x-4 gap-y-2">
+                {[
+                  'Mileage check',
+                  'Road Tax History',
+                  'Technical Specs',
+                  'NCT/CRW/MOT History',
+                  'Stolen Vehicle Check',
+                  'Previous Usage Check',
+                  'Vehical Valuation',
+                  'Owner History',
+                ].map((item, idx) => (
+                  <div key={idx} className="flex items-start">
+                    <span className="text-green-600 mr-1">✔</span>
+                    <span className="text-sm">{item}</span>
+                  </div>
+                ))}
+
+                <div className="border w-100 rounded-2xl">
+                  <div className="flex items-center mb-4 mt-4 ml-4">
+                    {/* <input type="checkbox" id="checkbox" className="mr-2 h-5 w-5" />
+                    <label htmlFor="checkbox" className="font-medium">Check Report</label> */}
+                  </div>
+
+                  <div className="mb-2 mt-4 ml-4">
+                    <span className="text-2xl font-bold">$139.99</span>
+                    <span className="text-1xl font-bold"> report</span>
+                  </div>
+
+                  <div className="text-sm mb-1 mt-2 ml-4">
+                    You pay $139.99 <span className="line-through">$150.00</span>
+                  </div>
+
+                  <div className="bg-red-300 text-red-700 w-16 text-center py-1 mb-4 mt-2 ml-4 rounded">
+                    -31.77%
+                  </div>
+
+                  <div className="border-t pt-4 flex items-center text-sm text-gray-600">
+                    <div className="flex items-center">
+                      <span className="text-green-600 mr-1 ml-4 mb-3">✔</span>
+                      <div className="mb-3 ml-2">You'll get report</div>
                     </div>
+                    <div className="ml-auto bg-gray-200 rounded-full h-5 w-5 mb-3 mr-3 flex items-center justify-center text-gray-400">
+                      i
+                    </div>
+                  </div>
                 </div>
-            )}
-
-            {/* ✅ Banner */}
-            <div
-                className="bg-cover bg-center py-20 px-4 text-white  bg-black"
-                style={{
-                    backgroundImage:
-                        "url('https://autoshistoryrecord.com/wp-content/uploads/2023/02/about-us-banner-img.jpg')",
-                }}
-            >
-                <div className="container mx-auto">
-                    <h3 className="text-4xl font-bold">Premium</h3>
-                    <Breadcrumb
-                        links={[
-                            { href: '/', label: 'Home' },
-                            { href: '/products', label: 'Product' },
-                            { href: '#', label: 'Premium', active: true },
-                        ]}
-                    />
-                </div>
+              </div>
             </div>
 
-            {/* ✅ Main Content */}
-            <main className="py-20 bg-gray-50">
-                <div className="container mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8">
-                    {/* Product Section */}
-                    <div className="lg:col-span-8">
-                        <div className="flex flex-col-reverse lg:flex-row items-center lg:items-start gap-10">
-                            {/* Left: Product Image */}
-                            <div className="w-full lg:w-1/2 pb-15">
-                                <img
-                                    src="/images/Placeholder.png"
-                                    alt="Awaiting product image"
-                                    className="w-full h-auto object-contain"
-                                />
-                            </div>
-                            {/* Right: Text Info */}
-                            <div className="w-full lg:w-1/2 pl-10">
-                                <h3 className="text-black text-3xl font-semibold">Platinmum</h3>
-                                <p className="text-xl text-red-600 mt-2">139.99$</p>
-
-                                <form className="mt-4 flex space-x-4" onSubmit={handleAddToCart}>
-                                    <input
-                                        type="number"
-                                        defaultValue={1}
-                                        min={1}
-                                        className="border px-4 py-2 w-20 text-black"
-                                    />
-                                    <button
-                                        type="submit"
-                                        className="bg-red-500 hover:bg-blue-950 text-white px-6 py-2 rounded"
-                                    >
-                                        Add to cart
-                                    </button>
-                                </form>
-
-                                <p className="mt-4 text-sm text-gray-600">
-                                    Category:{' '}
-                                       Boat History
-                                </p>
-                            </div>
-                        </div>
-
-                        {/* Prev/Next
-                        <div className="flex justify-between items-center border-t pt-10">
-                           
-                            <div className="text-right">
-                                <span className="block text-black">Next Post</span>
-                                <h4>
-                                    <Link href="/product/basic" className="text-gray-600">
-                                        basic
-                                    </Link>
-                                </h4>
-                            </div>
-                        </div> */}
-
-                        {/* Comments */}
-                        <CommentsForm  productId="14390" />
-                    </div>
-                </div>
-            </main>
-
-            {/* ✅ Footer */}
-            <footer className="bg-gray-900 py-6 text-center text-gray-400 text-sm">
-                <p>Copyright © DBS. All rights reserved</p>
-            </footer>
+            {/* <div className="mt-4 flex justify-center">
+              <button className="bg-red-400 hover:bg-red-500 text-black px-6 py-2 rounded font-medium">
+                Get Report
+              </button>
+            </div> */}
+          </div>
         </div>
-    );
+      </div>
+    </div>
+  );
 }

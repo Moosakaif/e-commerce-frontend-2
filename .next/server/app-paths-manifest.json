@@ -1,6 +1,6 @@
 {
   "/page": "app/page.js",
-  "/rv-history/page": "app/rv-history/page.js",
-  "/contact/page": "app/contact/page.js",
-  "/jet-ski-history/page": "app/jet-ski-history/page.js"
+  "/car-history/page": "app/car-history/page.js",
+  "/product/basic/page": "app/product/basic/page.js",
+  "/product/premium/page": "app/product/premium/page.js"
 }

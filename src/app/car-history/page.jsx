@@ -33,7 +33,7 @@ const CarHistoryReport = () => {
           </div>
         </div>
 
-        {/* Guarantee/Services Section */}
+        {/* Guarantee/Services Section
         <div className="bg-gray-100 py-10 px-4">
           <div className="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 text-center">
             <a href="/car-history"
@@ -57,7 +57,7 @@ const CarHistoryReport = () => {
             >Bike History Report
             </a>
           </div>
-        </div>
+        </div> */}
 
         {/* Pricing Section */}
         <section className="bg-white py-16">
