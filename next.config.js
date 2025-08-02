@@ -1,9 +1,7 @@
-// next.config.mjs
-const nextConfig = {
+// next.config.js
+module.exports = {
   output: 'export',
   images: {
     unoptimized: true,
   },
 };
-
-export default nextConfig;

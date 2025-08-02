@@ -1,35 +1,6 @@
 {
   "version": 4,
   "routes": {
-    "/favicon.ico": {
-      "initialHeaders": {
-        "cache-control": "public, max-age=0, must-revalidate",
-        "content-type": "image/x-icon",
-        "x-next-cache-tags": "_N_T_/layout,_N_T_/favicon.ico/layout,_N_T_/favicon.ico/route,_N_T_/favicon.ico"
-      },
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/favicon.ico",
-      "dataRoute": null,
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
     "/atv-history": {
       "experimentalBypassFor": [
         {
@@ -102,30 +73,6 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/cart": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/cart",
-      "dataRoute": "/cart.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
     "/car-history": {
       "experimentalBypassFor": [
         {
@@ -150,7 +97,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/jet-ski-history": {
+    "/cart": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -163,8 +110,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/jet-ski-history",
-      "dataRoute": "/jet-ski-history.rsc",
+      "srcRoute": "/cart",
+      "dataRoute": "/cart.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -198,6 +145,59 @@
         "x-next-revalidate-tag-token"
       ]
     },
+    "/jet-ski-history": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/jet-ski-history",
+      "dataRoute": "/jet-ski-history.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/favicon.ico": {
+      "initialHeaders": {
+        "cache-control": "public, max-age=0, must-revalidate",
+        "content-type": "image/x-icon",
+        "x-next-cache-tags": "_N_T_/layout,_N_T_/favicon.ico/layout,_N_T_/favicon.ico/route,_N_T_/favicon.ico"
+      },
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/favicon.ico",
+      "dataRoute": null,
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/": {
       "experimentalBypassFor": [
         {
@@ -213,30 +213,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/",
       "dataRoute": "/index.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/product/basic": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/product/basic",
-      "dataRoute": "/product/basic.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -294,7 +270,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/product/premium": {
+    "/about": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -307,8 +283,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/product/premium",
-      "dataRoute": "/product/premium.rsc",
+      "srcRoute": "/about",
+      "dataRoute": "/about.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -342,30 +318,6 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/products": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/products",
-      "dataRoute": "/products.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
     "/product/premiumjet": {
       "experimentalBypassFor": [
         {
@@ -381,6 +333,30 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/product/premiumjet",
       "dataRoute": "/product/premiumjet.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/products": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/products",
+      "dataRoute": "/products.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -414,7 +390,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/truck-history": {
+    "/product/premium": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -427,8 +403,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/truck-history",
-      "dataRoute": "/truck-history.rsc",
+      "srcRoute": "/product/premium",
+      "dataRoute": "/product/premium.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -486,6 +462,30 @@
         "x-next-revalidate-tag-token"
       ]
     },
+    "/truck-history": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/truck-history",
+      "dataRoute": "/truck-history.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/van-history": {
       "experimentalBypassFor": [
         {
@@ -510,7 +510,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/about": {
+    "/product/basic": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -523,8 +523,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/about",
-      "dataRoute": "/about.rsc",
+      "srcRoute": "/product/basic",
+      "dataRoute": "/product/basic.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -538,8 +538,8 @@
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "9af041d4834fab32c074caf20201ff0b",
-    "previewModeSigningKey": "7048a04823f0f076f009601f4e84d6a9a094ae83e82ea9db09f6348d71990738",
-    "previewModeEncryptionKey": "ace9a964c14ecbcb5b36f2339aa15dd9810b5848cda1a72250e2f663e95434c2"
+    "previewModeId": "3ebe4bdd7aa5ca77b94a6a3edfdf5a90",
+    "previewModeSigningKey": "fd5895b832866f1538d2325866edd9a84e7a93efe8d4459446adfa6aba684068",
+    "previewModeEncryptionKey": "40df5c79829dcac5f4eea0e0c4afe75d4dc8e09333b6496eaa256286a6d57944"
   }
 }
