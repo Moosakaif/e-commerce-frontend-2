@@ -1,0 +1,175 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "dynamicRoutes": [],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/about",
+      "regex": "^/about(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about(?:/)?$"
+    },
+    {
+      "page": "/atv-history",
+      "regex": "^/atv\\-history(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/atv\\-history(?:/)?$"
+    },
+    {
+      "page": "/bike-history",
+      "regex": "^/bike\\-history(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/bike\\-history(?:/)?$"
+    },
+    {
+      "page": "/boat-history",
+      "regex": "^/boat\\-history(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/boat\\-history(?:/)?$"
+    },
+    {
+      "page": "/car-history",
+      "regex": "^/car\\-history(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/car\\-history(?:/)?$"
+    },
+    {
+      "page": "/cart",
+      "regex": "^/cart(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/cart(?:/)?$"
+    },
+    {
+      "page": "/contact",
+      "regex": "^/contact(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/contact(?:/)?$"
+    },
+    {
+      "page": "/favicon.ico",
+      "regex": "^/favicon\\.ico(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/favicon\\.ico(?:/)?$"
+    },
+    {
+      "page": "/jet-ski-history",
+      "regex": "^/jet\\-ski\\-history(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/jet\\-ski\\-history(?:/)?$"
+    },
+    {
+      "page": "/product",
+      "regex": "^/product(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/product(?:/)?$"
+    },
+    {
+      "page": "/product/basic",
+      "regex": "^/product/basic(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/product/basic(?:/)?$"
+    },
+    {
+      "page": "/product/basicjet",
+      "regex": "^/product/basicjet(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/product/basicjet(?:/)?$"
+    },
+    {
+      "page": "/product/boatpay",
+      "regex": "^/product/boatpay(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/product/boatpay(?:/)?$"
+    },
+    {
+      "page": "/product/premium",
+      "regex": "^/product/premium(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/product/premium(?:/)?$"
+    },
+    {
+      "page": "/product/premiumjet",
+      "regex": "^/product/premiumjet(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/product/premiumjet(?:/)?$"
+    },
+    {
+      "page": "/products",
+      "regex": "^/products(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/products(?:/)?$"
+    },
+    {
+      "page": "/products/pages/page2",
+      "regex": "^/products/pages/page2(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/products/pages/page2(?:/)?$"
+    },
+    {
+      "page": "/products/pages/page4",
+      "regex": "^/products/pages/page4(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/products/pages/page4(?:/)?$"
+    },
+    {
+      "page": "/rv-history",
+      "regex": "^/rv\\-history(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/rv\\-history(?:/)?$"
+    },
+    {
+      "page": "/truck-history",
+      "regex": "^/truck\\-history(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/truck\\-history(?:/)?$"
+    },
+    {
+      "page": "/van-history",
+      "regex": "^/van\\-history(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/van\\-history(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "RSC",
+    "varyHeader": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+    "prefetchHeader": "Next-Router-Prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "Next-Router-Segment-Prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  },
+  "rewrites": []
+}
