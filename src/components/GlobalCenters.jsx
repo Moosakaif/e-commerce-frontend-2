@@ -6,7 +6,7 @@ const markers = [
   { name: "Moscow", style: "top-[35%] left-[39%]" },
   { name: "Russia", style: "top-[15%] left-[64%]" },
   { name: "Australia", style: "top-[73%] left-[80%]" },
-  { name: "United kin", style: "top-[17%] left-[43%]" },
+  { name: "United kingdom", style: "top-[17%] left-[43%]" },
 ];
 
 export default function GlobalCenters() {

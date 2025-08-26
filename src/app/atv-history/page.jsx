@@ -105,7 +105,7 @@ export default function TruckHistoryPage() {
                 </div>
             </section>
 
-            {/* Guarantee Section */}
+            {/* Guarantee Section
             <div className="bg-gray-100 py-10 px-4">
                 <div className="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 text-center">
                     <a href="/car-history"
@@ -129,7 +129,7 @@ export default function TruckHistoryPage() {
                     >Bike History Report
                     </a>
                 </div>
-            </div>
+            </div> */}
 
             {/* Pricing Section */}
             <section className="bg-white py-16">
@@ -149,13 +149,13 @@ export default function TruckHistoryPage() {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-black">
                         {/* Basic  Plan */}
                         <div className="bg-white shadow-xl rounded-xl p-6 md:p-8 text-center transition-all hover:scale-105 duration-300">
-                            <div className="text-sm font-semibold text-gray-500 mb-2">TAT: 12 To 24 Hours</div>
+                            <div className="text-sm font-semibold text-gray-500 mb-2">TAT: 3 To 4 Hours</div>
                             <img
-                                src="https://autoshistoryrecord.com/wp-content/uploads/2023/02/hosting-img-1.svg"
+                                src="images/Group 44.png"
                                 alt="starter"
                                 className="w-16 h-16 mx-auto mb-4"
                             />
-                            <h3 className="text-xl font-bold mb-4 text-black">Basic </h3>
+                            <h3 className="text-xl font-bold mb-4 text-black">Basic DriveCheckr Plan </h3>
                             <ul className="text-left text-sm space-y-3 text-black">
                                 {[
                                     "Vehicle Overview",
@@ -171,11 +171,11 @@ export default function TruckHistoryPage() {
                                     "Installed Options and Packages"
                                 ].map((item, i) => (
                                     <li key={i} className="flex items-start space-x-3">
-                                        {/* <img
-                        src="https://autoshistoryrecord.com/wp-content/plugins/natix-toolkit/assets/images/plan-box-default-img.svg"
+                                        <img
+                        src="images/tick1.png"
                         alt="check"
                         className="w-5 h-5 mt-1"
-                      /> */}
+                      />
                                         <span>{item}</span>
                                     </li>
                                 ))}
@@ -194,13 +194,13 @@ export default function TruckHistoryPage() {
 
                         {/* PREMIUM Plan */}
                         <div className="bg-white shadow-xl rounded-xl p-6 md:p-8 text-center transition-all hover:scale-105 duration-300">
-                            <div className="text-sm text-gray-600 mb-2">TAT: 30 Minutes</div>
+                            <div className="text-sm text-gray-600 mb-2">TAT: 1 To 2 Hours</div>
                             <img
-                                src="https://autoshistoryrecord.com/wp-content/uploads/2023/02/hosting-img-3.svg"
+                                src="images/prime.png"
                                 alt="Prime Plan Icon"
                                 className="mx-auto mb-4 w-14 h-14"
                             />
-                            <h3 className="text-xl font-semibold mb-4 text-black">PREMIUM </h3>
+                            <h3 className="text-xl font-semibold mb-4 text-black">Premium DriveCheckr Plan </h3>
                             <ul className="text-left space-y-3 text-black">
                                 {[
                                     // "Buy one get one free Report",
@@ -221,16 +221,16 @@ export default function TruckHistoryPage() {
                                     "Title Brand"
                                 ].map((item, index) => (
                                     <li key={index} className="flex items-start">
-                                        {/* <img
-                        src="https://autoshistoryrecord.com/wp-content/uploads/2023/02/dedicated-img-9.svg"
+                                        <img
+                        src="images/tick1.png"
                         alt=""
-                        className="w-5 h-5 mt-1 mr-3" /> */}
+                        className="w-5 h-5 mt-1 mr-3" />
                                         <span className="text-sm">{item}</span>
                                     </li>
                                 ))}
                             </ul>
                             <div className="mt-6">
-                                <small className="block text-gray-500">Starting at:</small>
+                                <small className="block text-gray-500">Only For:</small>
                                 <h2 className="text-3xl font-bold text-black">
                                     $59.<span className="text-xl font-normal">99</span>{" "}
                                     {/* <small className="text-sm font-normal text-gray-500">/mo</small> */}

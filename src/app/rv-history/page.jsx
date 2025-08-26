@@ -108,13 +108,13 @@ export default function BikeHistoryPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-black">
             {/* Basic  Plan */}
             <div className="bg-white shadow-xl rounded-xl p-6 md:p-8 text-center transition-all hover:scale-105 duration-300">
-              <div className="text-sm font-semibold text-gray-500 mb-2">TAT: 12 To 24 Hours</div>
+              <div className="text-sm font-semibold text-gray-500 mb-2">TAT: 3 To 4 Hours</div>
               <img
                 src="images/Group 44.png"
                 alt="starter"
                 className="w-16 h-16 mx-auto mb-4"
               />
-              <h3 className="text-xl font-bold mb-4 text-black">Basic </h3>
+              <h3 className="text-xl font-bold mb-4 text-black">Basic DriveCheckr Plan </h3>
               <ul className="text-left text-sm space-y-3 text-black">
                 {[
                   "Vehicle Overview",
@@ -153,13 +153,13 @@ export default function BikeHistoryPage() {
 
             {/* PREMIUM Plan */}
             <div className="bg-white shadow-xl rounded-xl p-6 md:p-8 text-center transition-all hover:scale-105 duration-300">
-              <div className="text-sm text-gray-600 mb-2">TAT: 2 To 3 Hours</div>
+              <div className="text-sm text-gray-600 mb-2">TAT: 1 To 2 Hours</div>
               <img
                 src="images/prime.png"
                 alt="Prime Plan Icon"
                 className="mx-auto mb-4 w-14 h-14"
               />
-              <h3 className="text-xl font-semibold mb-4 text-black">PREMIUM </h3>
+              <h3 className="text-xl font-semibold mb-4 text-black">Premium DriveCheckr Plan</h3>
               <ul className="text-left space-y-3 text-black">
                 {[
                  

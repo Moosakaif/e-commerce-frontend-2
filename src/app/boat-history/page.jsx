@@ -190,7 +190,7 @@ export default function BikeHistoryPage() {
                                 alt="Prime Plan Icon"
                                 className="mx-auto mb-4 w-14 h-14"
                             />
-                            <h3 className="text-xl font-semibold mb-4 text-black">Boat Package </h3>
+                            <h3 className="text-xl font-semibold mb-4 text-black">DriveCheckr Boat Plan </h3>
                             <ul className="text-left space-y-3 text-black">
                                 {[
                                     // "Buy one get one free Report",

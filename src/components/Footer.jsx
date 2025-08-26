@@ -9,6 +9,16 @@ export default function Footer() {
     { href: '#', label: 'Google Plus', icon: <FaGooglePlusG /> },
     { href: '#', label: 'LinkedIn', icon: <FaLinkedinIn /> },
   ];
+
+  const pages = [
+    { name: 'Home', href: '/' },
+    { name: 'Pricing', href: '/pricing' },
+    { name: 'Services', href: '/services' },
+    { name: 'Contact', href: '/contact' },
+    { name: 'Terms of Service', href: '/terms' },
+    { name: 'FAQ', href: '/faq' },
+  ];
+
   return (
     <footer className="bg-gray-900 text-white font-sans py-12">
       <div className="max-w-7xl mx-auto px-4">
@@ -43,48 +53,51 @@ export default function Footer() {
             <a href="/">
               <img
                 src="/images/DriveCheckr_Logo.png"
-                alt="Autos History Record"
+                alt="DriveCheckr"
                 width={180}
                 height={60}
               />
             </a>
-            <p className="text-gray-600">Powering your website with reliable hosting solutions.</p>
-            <div className="flex space-x-6 text-shadow-red-600 text-xl ">
-      {socials.map((item, i) => (
-        <Link
-          key={i}
-          href={item.href}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label={item.label}
-          className="shake-hover hover:text-red-950 transition duration-200 ease-in-out"
-        >
-          {item.icon}
-        </Link>
-      ))}
-    </div>
-
+            <p className="text-gray-600">
+              DriveCheckr is a trusted vehicle inspection company providing reliable reports to help
+              you make informed automotive decisions. We ensure transparency, safety, and peace of
+              mind in every vehicle check.
+            </p>
+            <div className="flex space-x-6 text-xl">
+              {socials.map((item, i) => (
+                <Link
+                  key={i}
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={item.label}
+                  className="shake-hover hover:text-red-950 transition duration-200 ease-in-out"
+                >
+                  {item.icon}
+                </Link>
+              ))}
+            </div>
           </div>
 
-          {/* Opening Hours */}
-          <div className="mt-8 md:mt-0 text-gray-600 space-y-2">
-            <p className="font-semibold">Opening Hours</p>
-            <p>
-              Monday — 8am – 5pm<br />
-              Tuesday — 8am – 5pm<br />
-              Wednesday — 8am – 5pm<br />
-              Thursday — 8am – 5pm<br />
-              Friday — 8am – 5pm<br />
-              Saturday — 8am – 5pm
-            </p>
+          {/* Page Links */}
+          <div className="mt-8 md:mt-0 text-gray-400 text-center md:text-left">
+            <p className="font-semibold mb-2">Quick Links</p>
+            <ul className="space-y-1">
+              {pages.map((page, idx) => (
+                <li key={idx}>
+                  <Link href={page.href} className="hover:text-white transition">
+                    {page.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
+
       <p className="text-center text-gray-400 text-sm mt-10">
-        Copyright © DBS. All rights reserved
+        © {new Date().getFullYear()} DriveCheckr. All rights reserved.
       </p>
     </footer>
   );
 }
-
-
